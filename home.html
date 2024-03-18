@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZED DAILY NEWS DIGEST</title>
+    <div id="image-slider">
+    <!-- Placeholder for the images -->
+</div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: green;
+            background-color: white;
+            margin: 0;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgba(105, 105, 105, 0.8);
+        }
+        .nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+       #image-slider {
+    height: 300px; /* Adjust height as needed */
+    animation: slideImages 15s infinite;
+}
+
+@keyframes slideImages {
+    0%, 33.33% {
+        background-image: url('sky4.jpg');
+    }
+    33.33%, 66.66% {
+        background-image: url('sky 3.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('sky 2.jpg');
+    }
+}
+
+        /* Animation */
+        @keyframes move {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .moving-text {
+            animation: move 10s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>PERSONALIZED DAILY NEWS DIGEST</h1>
+</div>
+
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact us.html">Contact us</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+    <a href="tables.html">Tables</a>
+    <a href="my book.html">My Book</a>
+</div>
+
+<div id="home">
+    <h2>Welcome to Our Home</h2>
+    <p class="moving-text">The "Personalized Daily News Digest" project aims to make it easier for people to keep up with the news. Instead of searching through lots of information, the project gives users a daily summary of news articles that match their interests. It does this by looking at what users like to read, how they read, and what they've read before. This summary is sent to users at a specific time each day, making it convenient for them to stay informed without spending a lot of time searching for news.</p>
+
+    <h2>Stay Informed, Effortlessly:</h2>
+    <p class="moving-text">The main goal of the project is to make getting news more  personal and simple. By using smart technology, the project figures out what kind of news each user prefers and puts together a short list of articles just for them. This saves users from feeling overwhelmed by too much information and helps them focus on what matters most to them.</p>
+
+    <h2>Your News, Your Way:</h2>
+    <p class="moving-text">One of the important things about this project is that it helps users feel more connected to the news. Instead of feeling lost in a sea of headlines, users get to read about topics they care about. This makes the news more interesting and enjoyable to follow.</p>
+
+    <h2>Connect with What Matters:</h2>
+    <p class="moving-text">Another good thing about the project is that it helps users feel more confident about what's happening in the world. By giving them updates on news topics they care about, the project helps users stay up-to-date and informed about important events.</p>
+</div>
+<div>
+    <a href="form.html">Register</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZED DAILY NEWS DIGEST</title>
+    <div id="image-slider">
+    <!-- Placeholder for the images -->
+</div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: green;
+            background-color: white;
+            margin: 0;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgba(105, 105, 105, 0.8);
+        }
+        .nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        li {
+            color: blue;
+            font-size: 18px;
+        }
+       #image-slider {
+    height: 300px; /* Adjust height as needed */
+    animation: slideImages 15s infinite;
+}
+
+@keyframes slideImages {
+    0%, 33.33% {
+        background-image: url('sky4.jpg');
+    }
+    33.33%, 66.66% {
+        background-image: url('sky 3.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('sky 2.jpg');
+    }
+}
+
+        /* Animation */
+        @keyframes move {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .moving-text {
+            animation: move 10s infinite alternate;
+        }
+         #services {
+            position: relative;
+            animation: moveText 10s linear infinite alternate; /* Adjust timing as needed */
+        }
+
+        @keyframes moveText {
+            0% {
+                right: 0;
+            }
+            100% {
+                right: -200px; /* Adjust distance to move */
+            }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>PERSONALIZED DAILY NEWS DIGEST</h1>
+</div>
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact us.html">Contact us</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+    <a href="tables.html">Tables</a>
+   <a href="my book.html">My Book</a>
+</div>
+</head>
+<body>
+
+<div id="services">
+    <h1>Services</h1>
+    <h1>the services we offer</h1>
+
+    <h1>1. Personalized News Summary:</h1>
+    <ul>
+        <li>The "Personalized Daily News Digest" project generates a daily summary of news articles based on users' interests and reading habits. For example, if a user frequently reads articles about technology and sports, the daily digest will prioritize news in these categories.</li>
+    </ul>
+    
+    <h1>2. User Profile Creation:</h1>
+    <ul>
+        <li>Users can create personalized profiles where they can specify their preferences, such as favorite topics or preferred sources. For instance, a user can indicate an interest in politics and international news.</li>
+    </ul>
+    
+    <h1>3. Customized Content Curation:</h1>
+    <ul>
+        <li>Using smart technology, the project analyzes users' reading history and preferences to curate a list of articles tailored to their interests. For example, if a user often reads articles from a particular news outlet, the project will include more articles from that source in their digest.</li>
+    </ul>
+    
+    <h1>4. Scheduled Delivery:</h1>
+    <ul>
+        <li>The project sends the personalized news digest to users at a specific time each day, making it convenient for them to stay informed without actively searching for news. For example, users can receive their digest every morning before they start their day.</li>
+    </ul>
+    
+    <h1>5. Language and Content Preferences:</h1>
+    <ul>
+        <li>Users can specify their language preferences and preferred content types (e.g., articles, videos) to further customize their news experience. For instance, a user can choose to receive news articles in English.</li>
+    </ul>
+    
+    <h1>6. Reading History Tracking:</h1>
+    <ul>
+        <li>The project keeps track of users' reading history, including the articles they've read and the time spent on each article. This data helps improve the personalization of future digests and provides insights into users' interests.</li>
+    </ul>
+</div>
+
+</body>
+</html>

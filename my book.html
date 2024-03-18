@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZED DAILY NEWS DIGEST</title>
+    <div id="image-slider">
+    <!-- Placeholder for the images -->
+</div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: green;
+            background-color: white;
+            margin: 0;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgba(105, 105, 105, 0.8);
+        }
+        .nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+       #image-slider {
+    height: 300px; /* Adjust height as needed */
+    animation: slideImages 15s infinite;
+}
+
+@keyframes slideImages {
+    0%, 33.33% {
+        background-image: url('sky4.jpg');
+    }
+    33.33%, 66.66% {
+        background-image: url('sky 3.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('sky 2.jpg');
+    }
+}
+
+        /* Animation */
+        @keyframes move {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .moving-text {
+            animation: move 10s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>PERSONALIZED DAILY NEWS DIGEST</h1>
+</div>
+
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact us.html">Contact us</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+    <a href="tables.html">Tables</a>
+   <a href="my book.html">My Book</a>
+</div>
+
+<div class="container">
+    <div id="mybook.html">
+ <h1>Table of Contents</h1>
+    <ul>
+        <li>
+            <h2>CHAPTER 2: DATABASE DESIGN</h2>
+            <ul>
+                <li><h3>2.1 INTRODUCTION</h3></li>
+                <li><h3>2.2 SECTION 1:</h3>
+                    <ul>
+                        <li><h4>2.2.1 ENTITIES</h4></li>
+                        <li><h4>2.2.2 LOGICAL DATABASE MODEL</h4></li>
+                        <li><h4>2.2.3 ENTITY RELATIONSHIP DIAGRAM</h4></li>
+                    </ul>
+                </li>
+                <li><h3>2.3 SECTION 2: SQL</h3></li>
+                <li><h3>2.4 SECTION 3:</h3>
+                    <ul>
+                        <li><h4>2.4.1 VIEWS, TRIGGERS AND PROCEDURES</h4></li>
+                    </ul>
+                </li>
+                <li><h3>2.5 CONCLUSION</h3></li>
+            </ul>
+        </li>
+        <li>
+            <h2>CHAPTER 3: JAVA PROGRAMMING</h2>
+            <ul>
+                <li><h3>3.1 INTRODUCTION</h3></li>
+                <li><h3>3.2 TOOLS USED TO DEVELOP THIS SYSTEM IN JAVA PROGRAMMING</h3></li>
+                <li><h3>3.3 FORMS DESCRIPTION</h3></li>
+                <li><h3>3.4 SPECIAL BUTTONS</h3></li>
+                <li><h3>3.5 CONCLUSION</h3></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+<div class="topic">
+    <h1>TOPIC: Personalized Daily News Digest</h1>
+</div>
+
+<div class="chapter">
+    <h2>CHAPTER 2: DATABASE DESIGN</h2>
+    <div class="section">
+        <h3>2.1 INTRODUCTION</h3>
+        <p>
+            The "Personalized Daily News Digest" project aims to make it easier for people to keep up with the news. Instead of searching through lots of information, the project gives users a daily summary of news articles that match their interests. It does this by looking at what users like to read, how they read, and what they've read before. This summary is sent to users at a specific time each day, making it convenient for them to stay informed without spending a lot of time searching for news.
+        </p>
+        <p>
+            The main goal of the project is to make getting news more  personal and simple. By using smart technology, the project figures out what kind of news each user prefers and puts together a short list of articles just for them. This saves users from feeling overwhelmed by too much information and helps them focus on what matters most to them.
+        </p>
+        <p>
+            One of the important things about this project is that it helps users feel more connected to the news. Instead of feeling lost in a sea of headlines, users get to read about topics they care about. This makes the news more interesting and enjoyable to follow.
+        </p>
+        <p>
+            Another good thing about the project is that it helps users feel more confident about what's happening in the world. By giving them updates on news topics they care about, the project helps users stay up-to-date and informed about important events.
+        </p>
+        <p>
+            Overall, the "Personalized Daily News Digest" project is all about using technology to make the news easier to understand and more enjoyable to read. It's about giving users the news they want, when they want it, in a way that fits their interests and preferences.
+        </p>
+    </div>
+    <div class="section">
+        <h3>In this chapter we will be describing database of the system tables inside that database and the way those tables were created in, addition on that in this chapter we will show table views from original tables, the relationship between created tables that are in this database. In database of this system be ready to look at operation used on some table in this database so that you can know what to and what not to do on given entity.</h3>
+        <p>Note that to develop this system database there are some material which is going to be  used so that we can get on final output . Among these the important one is xampp saver MySQL, so now let together navigate this database system.</p>
+    </div>
+</div>
+<div class="2.2 SECTION1: ">
+    
+    <h2> 2.2 SECTION1:</h2>
+    <h2> 2.2.1 ENTITIES</h2>
+    <div class="sub-section">
+        <h3>User Profile Table</h3>
+        <pre>
+CREATE TABLE UserProfile (
+  UserID INT PRIMARY KEY,
+  Username VARCHAR(255),
+  Email VARCHAR(255),
+  Preferences VARCHAR(255),
+  ReadingHistory VARCHAR(255),
+  SubscriptionStatus VARCHAR(255)
+);        </pre>
+    </div>
+    <div class="sub-section">
+        <h3>News Article Table</h3>
+        <pre>
+CREATE TABLE NewsArticle (
+  ArticleID INT PRIMARY KEY,
+  Title VARCHAR(255),
+  Author VARCHAR(255),
+  PublicationDate DATE,
+  Content TEXT,
+  Tags VARCHAR(255),
+  Source VARCHAR(255)
+);        </pre>
+    </div>
+    <div class="sub-section">
+        <h3>Digest Configuration Table</h3>
+        <pre>
+CREATE TABLE DigestConfiguration (
+  DigestID INT PRIMARY KEY,
+  UserID INT,
+  TimeOfDelivery TIME,
+  PreferredContentTypes VARCHAR(255),
+  LanguagePreferences VARCHAR(255),
+  FOREIGN KEY (UserID) REFERENCES UserProfile(UserID)
+);        </pre>
+    </div>
+    <div class="sub-section">
+        <h3>Reading History Table</h3>
+        <pre>
+CREATE TABLE ReadingHistory (
+  HistoryID INT PRIMARY KEY,
+  UserID INT,
+  ArticleID INT,
+  Timestamp DATETIME,
+  ReadingDuration INT,
+  FOREIGN KEY (UserID) REFERENCES UserProfile(UserID),
+  FOREIGN KEY (ArticleID) REFERENCES NewsArticle(ArticleID)
+);        </pre>
+    </div>
+    <div class="sub-section">
+        <h3>Notification Log Table</h3>
+        <pre>
+CREATE TABLE NotificationLog (
+  LogID INT PRIMARY KEY,
+  UserID INT,
+  NotificationType VARCHAR(255),
+  Timestamp DATETIME,
+  Status VARCHAR(255),
+  FOREIGN KEY (UserID) REFERENCES UserProfile(UserID)
+);        </pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Queries</h2>
+    <div class="sub-section">
+        <h3>User Profile</h3>
+        <pre>SELECT * FROM UserProfile;</pre>
+    </div>
+    <div class="sub-section">
+        <h3>News Article</h3>
+        <pre>SELECT * FROM NewsArticle;</pre>
+    </div>
+    <div class="sub-section">
+        <h3>Digest Configuration</h3>
+        <pre>SELECT * FROM DigestConfiguration;</pre>
+    </div>
+    <div class="sub-section">
+        <h3>Reading History</h3>
+        <pre>SELECT * FROM ReadingHistory;</pre>
+    </div>
+    <div class="sub-section">
+        <h3>Notification Log</h3>
+        <pre>SELECT * FROM NotificationLog;</pre>
+    </div>
+</div>
+<div class="section">
+    <h2>2.2.2 LOGICAL DATABASE MODEL</h2>
+    <p>The figure below describes how table related to one another logically in this system. What to say about this graph is that foreign key and primary one will generate these relationship as shown on this logical database model as well as entity relationship diagram below that.</p>
+    <img src=" picture1.png" alt="picture1">
+</div>
+
+<div class="section">
+    <h2> 2.2.2ENTITY RELETIONSHIP DIAGRAM</h2>
+    <p>The figure below illustrates the entity relationship diagram:</p>
+    <img src="picture2.png" alt="picture2">
+</div>
+<div class="section">
+    <h2>2.3 SECTION2:SQL</h2>
+    <p>To insert values into the tables, you can use the following SQL statements:</p>
+    <h3>UserProfile Table:</h3>
+    <pre><code>INSERT INTO UserProfile (UserID, Username, Email, Preferences, ReadingHistory, SubscriptionStatus) 
+VALUES (1, 'JohnDoe', 'johndoe@example.com', 'Technology, Science', '1,3,5', 'Active'),
+(2, 'AliceSmith', 'alice.smith@gmail.com', 'Science, Health', '2,4,6', 'Active'),
+(3, 'BobJohnson', 'bob.johnson@gmail.com', 'Politics, Economics', '3,5,7', 'Active'),
+(4, 'EmilyDavis', 'emily.davis@gmail.com', 'Art, Literature', '4,6,8', 'Inactive'),
+(5, 'MichaelBrown', 'michael.brown@gmail.com', 'Sports, Entertainment', '5,7,9', 'Active'),
+(6, 'SarahWilson', 'sarah.wilson@gmail.com', 'Technology, Health', '6,8,10', 'Active'),
+(7, 'DavidMiller', 'david.miller@gmail.com', 'Environment, Science', '7,9,11', 'Active'),
+(8, 'EmmaMartinez', 'emma.martinez@gmail.com', 'Travel, Food', '8,10,12', 'Active'),
+(9, 'JamesTaylor', 'james.taylor@gmail.com', 'History, Politics', '9,11,13', 'Inactive'),
+(10, 'OliviaAnderson', 'olivia.anderson@gmail.com', 'Fashion, Lifestyle', '10,12,14', 'Active');
+</code></pre>
+    <!-- Leave a placeholder for the image -->
+    <img src="picture3.png" alt="picture3">
+</div>
+<div class="section">
+    <h3>NewsArticle Table:</h3>
+    <pre><code>INSERT INTO NewsArticle (ArticleID, Title, Author, PublicationDate, Content, Tags, Source) 
+VALUES (1, 'The Future of AI', 'Jane Smith', '2023-12-15', 'Lorem ipsum dolor sit amet...', 'AI, Technology', 'TechNews.com'),
+(2, 'The Impact of Climate Change', 'John Adams', '2024-01-05', 'Lorem ipsum dolor sit amet...', 'Climate Change, Environment', 'EnvironmentalNews.org'),
+(3, 'Understanding Quantum Computing', 'Emily Johnson', '2024-01-10', 'Lorem ipsum dolor sit amet...', 'Quantum Computing, Technology', 'TechInsight.com'),
+(4, 'Economic Trends in Asia', 'Michael Brown', '2024-01-15', 'Lorem ipsum dolor sit amet...', 'Economics, Asia', 'EconomicTimes.com'),
+(5, 'New Advances in Medicine', 'Alice Smith', '2024-01-20', 'Lorem ipsum dolor sit amet...', 'Medicine, Health', 'MedicalJournal.com'),
+(6, 'Art in the Digital Age', 'Sophia Lee', '2024-01-25', 'Lorem ipsum dolor sit amet...', 'Art, Digital', 'ArtTech.com'),
+(7, 'Sports Recap of the Year', 'Daniel White', '2024-02-01', 'Lorem ipsum dolor sit amet...', 'Sports, Recap', 'SportsNewsWeekly.com'),
+(8, 'The Latest Movie Releases', 'Emma Martinez', '2024-02-05', 'Lorem ipsum dolor sit amet...', 'Movies, Entertainment', 'EntertainmentBuzz.com'),
+(9, 'Exploring Ancient Civilizations', 'David Clark', '2024-02-10', 'Lorem ipsum dolor sit amet...', 'History, Archaeology', 'HistoryToday.com'),
+(10, 'Fashion Trends for Spring', 'Olivia Anderson', '2024-02-15', 'Lorem ipsum dolor sit amet...', 'Fashion, Trends', 'Fashionista.com'),
+(11, 'The Future of Space Exploration', 'Andrew Roberts', '2024-02-20', 'Lorem ipsum dolor sit amet...', 'Space Exploration, Science', 'SpaceNews.com');
+</code></pre>
+    <!-- Leave a placeholder for the image -->
+    <img src="picture4.png" alt="picture4">
+</div>
+<div class="section">
+    <h3>DigestConfiguration Table:</h3>
+    <pre><code>INSERT INTO DigestConfiguration (DigestID, UserID, TimeOfDelivery, PreferredContentTypes, LanguagePreferences) 
+VALUES (1, 1, '08:00:00', 'Technology, Science', 'English'),
+(2, 2, '09:00:00', 'Science, Health', 'English'),
+(3, 3, '10:00:00', 'Politics, Economics', 'English'),
+(4, 4, '11:00:00', 'Art, Literature', 'English'),
+(5, 5, '12:00:00', 'Sports, Entertainment', 'English'),
+(6, 6, '13:00:00', 'Technology, Health', 'English'),
+(7, 7, '14:00:00', 'Environment, Science', 'English'),
+(8, 8, '15:00:00', 'Travel, Food', 'English'),
+(9, 9, '16:00:00', 'History, Politics', 'English'),
+(10, 10, '17:00:00', 'Fashion, Lifestyle', 'English');
+</code></pre>
+    <!-- Leave a placeholder for the image -->
+    <img src="picture5.png" alt="picture5">
+</div>
+<div class="section">
+    <h3>ReadingHistory Table:</h3>
+    <pre><code>INSERT INTO ReadingHistory (HistoryID, UserID, ArticleID, Timestamp, ReadingDuration) 
+VALUES (1, 1, 1, '2023-12-18 10:30:00', 15),
+(2, 2, 2, '2024-01-08 11:45:00', 20),
+(3, 3, 3, '2024-01-15 13:20:00', 25),
+(4, 4, 4, '2024-01-22 15:10:00', 18),
+(5, 5, 5, '2024-01-29 17:30:00', 22),
+(6, 6, 6, '2024-02-05 09:45:00', 16),
+(7, 7, 7, '2024-02-12 12:55:00', 30),
+(8, 8, 8, '2024-02-19 14:40:00', 28),
+(9, 9, 9, '2024-02-26 16:20:00', 24),
+(10, 10, 10, '2024-03-04 18:00:00', 27);
+</code></pre>
+    <!-- Leave a placeholder for the image -->
+    <img src="picture6.png" alt="picture6">
+</div>
+<div class="section">
+    <h3>NotificationLog Table:</h3>
+    <pre><code>INSERT INTO NotificationLog (LogID, UserID, NotificationType, Timestamp, Status) 
+VALUES (1, 1, 'New Article', '2023-12-20 09:00:00', 'Read'),
+(2, 2, 'New Article', '2024-01-06 10:00:00', 'Unread'),
+(3, 3, 'New Article', '2024-01-13 11:30:00', 'Unread'),
+(4, 4, 'New Article', '2024-01-20 13:15:00', 'Unread'),
+(5, 5, 'New Article', '2024-01-27 15:45:00', 'Unread'),
+(6, 6, 'New Article', '2024-02-03 08:30:00', 'Unread'),
+(7, 7, 'New Article', '2024-02-10 11:20:00', 'Unread'),
+(8, 8, 'New Article', '2024-02-17 13:00:00', 'Unread'),
+(9, 9, 'New Article', '2024-02-24 14:45:00', 'Unread');
+</code></pre>
+    <!-- Leave a placeholder for the image -->
+    <img src="picture7.png" alt="picture7">
+</div>
+<div class="section">
+    <h3>Update Queries:</h3>
+    <pre><code>UPDATE UserProfile
+SET Email = 'newemail@example.com'
+WHERE UserID = 1;
+
+UPDATE NewsArticle
+SET Title = 'New Title'
+WHERE ArticleID = 1;
+
+UPDATE DigestConfiguration
+SET TimeOfDelivery = '12:00:00'
+WHERE DigestID = 1;
+
+UPDATE ReadingHistory
+SET ReadingDuration = 20
+WHERE HistoryID = 1;
+
+UPDATE NotificationLog
+SET Status = 'Unread'
+WHERE LogID = 1;
+</code></pre>
+</div>
+<div class="section">
+    <h3> 2.4.1 VIEWS, TRIGGERS AND PROCEDURES</h3>
+    <p>Create a view to insert data into your tables:</p>
+    <pre><code>CREATE VIEW InsertUserProfileUserID AS
+SELECT UserID
+FROM UserProfile;
+</code></pre>
+    <img src="picture8.png" alt="picture8">
+</div>
+<div class="section">
+    <p>Insert data into InsertUserProfileUserID view:</p>
+    <pre><code>INSERT INTO InsertUserProfileUserID (UserID) 
+VALUES (4);
+</code></pre>
+    <p>Create a view to insert data into your tables:</p>
+    <pre><code>CREATE VIEW InsertNewsArticleArticleID AS
+SELECT ArticleID
+FROM NewsArticle;
+</code></pre>
+    <img src="picture9.png" alt="picture9">
+</div>
+<div class="section">
+    <p>Create a view to insert data into your tables:</p>
+    <pre><code>CREATE VIEW InsertDigestConfigurationDigestID AS
+SELECT DigestID
+FROM DigestConfiguration;
+</code></pre>
+    <img src="picture10.png" alt="picture10">
+</div>
+<div class="section">
+    <p>Create a view to insert data into your tables:</p>
+    <pre><code>CREATE VIEW InsertReadingHistoryHistoryID AS
+SELECT HistoryID
+FROM ReadingHistory;
+</code></pre>
+    <img src="picture11.png" alt="picture11">
+</div>
+<div class="section">
+    <p>Create a view to insert data into your tables:</p>
+    <pre><code>CREATE VIEW InsertNotificationLogLogID AS
+SELECT LogID
+FROM NotificationLog;
+</code></pre>
+    <img src="picture12.png" alt="picture12">
+</div>
+<div class="section">
+    <p>To create a view that displays all the information in your tables:</p>
+    <p>For the UserProfile table:</p>
+    <pre><code>CREATE VIEW AllUserProfileData AS
+SELECT * FROM UserProfile;
+</code></pre>
+    <p>For the NewsArticle table:</p>
+    <pre><code>CREATE VIEW AllNewsArticleData AS
+SELECT * FROM NewsArticle;
+</code></pre>
+    <img src="picture13.png" alt="picture13">
+</div>
+<div class="section">
+    <p>To create a view that displays all the information in the NewsArticle table:</p>
+    <pre><code>CREATE VIEW AllNewsArticleData AS
+SELECT * FROM NewsArticle;
+</code></pre>
+    <img src="picture14.png" alt="picture14">
+</div>
+<div class="section">
+    <p>To create a view that displays all the information in the DigestConfiguration table:</p>
+    <pre><code>CREATE VIEW AllDigestConfigurationData AS
+SELECT * FROM DigestConfiguration;
+</code></pre>
+    <img src="picture15.png" alt="picture15">
+</div>
+<div class="section">
+    <p>To create a view that displays all the information in the ReadingHistory table:</p>
+    <pre><code>CREATE VIEW AllReadingHistoryData AS
+SELECT * FROM ReadingHistory;
+</code></pre>
+    <img src="picture16.png" alt="picture16">
+</div>
+<div class="section">
+    <p>To create a view that displays all the information in the NotificationLog table:</p>
+    <pre><code>CREATE VIEW AllNotificationLogData AS
+SELECT * FROM NotificationLog;
+</code></pre>
+    <img src="picture17.png" alt="picture17">
+</div>
+<div class="section">
+    <p>After creating these views, you can query them to display all the information in your tables. For example:</p>
+    <pre><code>SELECT * FROM AllUserProfileData;
+SELECT * FROM AllNewsArticleData;
+SELECT * FROM AllDigestConfigurationData;
+SELECT * FROM AllReadingHistoryData;
+SELECT * FROM AllNotificationLogData;
+</code></pre>
+<p>These queries will display all the information from the respective tables using the created views.</p>
+</div>
+<div class="section">
+    <p>To create a view that allows updating information in any of the two tables in your system, you can use the following SQL statements to create a view for each table:</p>
+    <p>For updating information in the UserProfile table:</p>
+    <pre><code>CREATE VIEW UpdateUserProfile AS
+SELECT * FROM UserProfile;</code></pre>
+    <p>For updating information in the NewsArticle table:</p>
+    <pre><code>CREATE VIEW UpdateNewsArticle AS
+SELECT * FROM NewsArticle;</code></pre>
+</div>
+<div class="section">
+    <p>After creating these views, you can use them to update information in the respective tables. For example, you can update the UserProfile table using the view as follows:</p>
+    <pre><code>UPDATE UserProfile
+SET Email = 'newemail@example.com'
+WHERE UserID = 1;</code></pre>
+    <p>Similarly, you can update the NewsArticle table using the view as follows:</p>
+    <pre><code>UPDATE NewsArticle
+SET Title = 'New Title'
+WHERE ArticleID = 1;</code></pre>
+    <p>These views allow you to update information in the tables by updating the views, and the changes will be reflected in the underlying tables.</p>
+</div>
+<div class="section">
+    <p>To delete data in any two of your tables according to any simple condition of your choice, you can create views and execute DELETE statements. For example:</p>
+    <p>For deleting data in the UserProfile table:</p>
+    <pre><code>DELETE FROM UserProfile
+WHERE UserID = 1;</code></pre>
+    <p>For deleting data in the NewsArticle table:</p>
+    <pre><code>DELETE FROM NewsArticle
+WHERE ArticleID = 1;</code></pre>
+</div>
+
+<div class="section">
+    <p>To create a view that displays the total reading duration per user:</p>
+    <pre><code>CREATE VIEW TotalReadingDurationPerUser AS
+SELECT UserID, SUM(ReadingDuration) AS TotalDuration
+FROM ReadingHistory
+GROUP BY UserID;
+SELECT * FROM TotalReadingDurationPerUser;
+</code></pre>
+    <img src="picture18.png" alt="picture18">
+</div>
+<div class="section">
+    <p>To create a stored procedure to insert data into the UserProfile table:</p>
+    <pre><code>DELIMITER //
+CREATE PROCEDURE InsertIntoUserProfileProcedure (
+    IN p_UserID INT,
+    IN p_Username VARCHAR(255),
+    IN p_Email VARCHAR(255),
+    IN p_Preferences VARCHAR(255),
+    IN p_ReadingHistory VARCHAR(255),
+    IN p_SubscriptionStatus VARCHAR(255)
+)
+BEGIN
+    INSERT INTO UserProfile (UserID, Username, Email, Preferences, ReadingHistory, SubscriptionStatus) 
+    VALUES (p_UserID, p_Username, p_Email, p_Preferences, p_ReadingHistory, p_SubscriptionStatus);
+END //
+DELIMITER ;
+You can call this stored procedure to insert data into the UserProfile table as follows:
+CALL InsertIntoUserProfileProcedure(1, 'JohnDoe', 'johndoe@gmail.com', 'Technology', '1,3,5', 'Active');
+</code></pre>
+</div>
+<div class="section">
+    <p>To create a stored procedure to display all the information in your tables:</p>
+    <pre><code>DELIMITER //
+CREATE PROCEDURE DisplayAllTableDataProcedure ()
+BEGIN
+    SELECT * FROM UserProfile;
+    SELECT * FROM NewsArticle;
+    SELECT * FROM DigestConfiguration;
+    SELECT * FROM ReadingHistory;
+    SELECT * FROM NotificationLog;
+END //
+DELIMITER ;
+
+CALL DisplayAllTableDataProcedure();
+</code></pre>
+</div>
+<div class="section">
+    <p>To create a stored procedure to update information in any of the two tables of your system:</p>
+    <pre><code>DELIMITER //
+CREATE PROCEDURE UpdateTableDataProcedure (
+    IN p_TableName VARCHAR(255),
+    IN p_ColumnName VARCHAR(255),
+    IN p_NewValue VARCHAR(255),
+    IN p_ConditionColumn VARCHAR(255),
+    IN p_ConditionValue INT
+)
+BEGIN
+    SET @sql = CONCAT('UPDATE ', p_TableName, ' SET ', p_ColumnName, ' = ? WHERE ', p_ConditionColumn, ' = ?');
+    PREPARE stmt FROM @sql;
+    SET @new_value = p_NewValue;
+    SET @condition_value = p_ConditionValue;
+    EXECUTE stmt USING @new_value, @condition_value;
+    DEALLOCATE PREPARE stmt;
+END //
+DELIMITER ;
+
+CALL UpdateTableDataProcedure('UserProfile', 'Email', 'newemail@example.com', 'UserID', 1);
+</code></pre>
+</div>
+<div class="section">
+    <p>To create a stored procedure to delete data in any two of your tables according to any simple condition of your choice:</p>
+    <pre><code>DELIMITER //
+CREATE PROCEDURE DeleteFromTablesProcedure (
+    IN p_TableName1 VARCHAR(255),
+    IN p_ConditionColumn1 VARCHAR(255),
+    IN p_ConditionValue1 INT,
+    IN p_TableName2 VARCHAR(255),
+    IN p_ConditionColumn2 VARCHAR(255),
+    IN p_ConditionValue2 INT
+)
+BEGIN
+    SET @sql1 = CONCAT('DELETE FROM ', p_TableName1, ' WHERE ', p_ConditionColumn1, ' = ?');
+    PREPARE stmt1 FROM @sql1;
+    SET @condition_value1 = p_ConditionValue1;
+    EXECUTE stmt1 USING @condition_value1;
+    DEALLOCATE PREPARE stmt1;
+
+    SET @sql2 = CONCAT('DELETE FROM ', p_TableName2, ' WHERE ', p_ConditionColumn2, ' = ?');
+    PREPARE stmt2 FROM @sql2;
+    SET @condition_value2 = p_ConditionValue2;
+    EXECUTE stmt2 USING @condition_value2;
+    DEALLOCATE PREPARE stmt2;
+END //
+DELIMITER ;
+
+CALL DeleteFromTablesProcedure('UserProfile', 'UserID', 1, 'NewsArticle', 'ArticleID', 1);
+</code></pre>
+</div>
+<div class="section">
+    <p>To create a stored procedure to define a view that considers a subquery:</p>
+    <pre><code>DELIMITER //
+CREATE PROCEDURE CreateSubqueryViewProcedure()
+BEGIN
+    SET @subquery = '(SELECT UserID, COUNT(*) AS ArticleCount FROM NewsArticle GROUP BY UserID) AS UserArticleCount';
+    SET @sql = CONCAT('CREATE VIEW UserArticleCountView AS SELECT * FROM ', @subquery);
+    PREPARE stmt FROM @sql;
+    EXECUTE stmt;
+    DEALLOCATE PREPARE stmt;
+END //
+DELIMITER ;
+
+CALL CreateSubqueryViewProcedure();
+</code></pre>
+</div>
+<div class="section">
+    <p>To create triggers after inserting and updating data in two tables:</p>
+    <pre><code>DELIMITER //
+
+CREATE TRIGGER AfterInsertDigestConfiguration
+AFTER INSERT ON DigestConfiguration
+FOR EACH ROW
+BEGIN
+    INSERT INTO AuditTrail (TableName, Action, Timestamp)
+    VALUES ('DigestConfiguration', 'Insert', NOW());
+END;
+/
+DELIMITER //
+
+CREATE TRIGGER AfterInsertNotificationLog
+AFTER INSERT ON NotificationLog
+FOR EACH ROW
+BEGIN
+    INSERT INTO AuditTrail (TableName, Action, Timestamp)
+    VALUES ('NotificationLog', 'Insert', NOW());
+END;
+//
+DELIMITER //
+
+CREATE TRIGGER AfterUpdateDigestConfiguration
+AFTER UPDATE ON DigestConfiguration
+FOR EACH ROW
+BEGIN
+    INSERT INTO AuditTrail (TableName, Action, Timestamp)
+    VALUES ('DigestConfiguration', 'Update', NOW());
+END;
+//
+DELIMITER //
+
+CREATE TRIGGER AfterUpdateNotificationLog
+AFTER UPDATE ON NotificationLog
+FOR EACH ROW
+BEGIN
+    INSERT INTO AuditTrail (TableName, Action, Timestamp)
+    VALUES ('NotificationLog', 'Update', NOW());
+END;
+//
+</code></pre>
+</div>
+<div class="section">
+    <h2>2.4 CONCLUSION</h2>
+    <p>The "Personalized Daily News Digest" project uses a special database to help people read news more easily. It looks at how each person likes to read news and what they like to read about. Then, it creates a short summary of news articles just for them. This summary is sent to them every day at the same time, so they don't have to spend a lot of time looking for news themselves.</p>
+    
+    <p>
+The main goal of the project is to make reading news simpler and more personal. By using clever technology, it figures out what kind of news each person likes and makes a special list of articles just for them. This helps people avoid feeling overwhelmed by too much news and lets them focus on what they're interested in.
+</p>
+    
+    <p>A cool thing about this project is that it helps people feel more connected to the news. Instead of seeing lots of news that might not interest them, they get to read about things they care about. This makes the news more fun to read and keeps people interested in what's happening in the world.</p>
+    
+    <p>Another good thing about the project is that it helps people feel more sure about what's happening in the world. By giving them updates on news topics they care about, the project helps people stay up-to-date and understand important events better.</p>
+    
+    <p>In short, the "Personalized Daily News Digest" project is all about using smart technology to make reading news easier and more enjoyable. It gives people the news they want, when they want it, in a way that suits their interests and preferences.</p>
+</div>
+<div class="section">
+    <h2>CHAPTER3: JAVA PROGRAMMING </h2>
+    <h3>3.1 INTRODUCTION</h3>
+    <p>This chapter describes how the analyzed system was created using a powerful general-purpose programming language. Under this, 
+
+chapter I will go over in detail how everything will work together with the database. 
+
+that has been described previously, and how it copes with the entire examined system.
+</p>
+    
+    <h3>3.2 TOOLS USED TO DEVELOP THIS SYSTEM IN JAVA PROGRAMMING </h3>
+    <p><strong>Eclipse IDE:</strong> An integrated development environment for computer programming. The system includes a base workspace and customizable plug-ins. Until 2016, it was the most popular IDE for Java development, now ranking second.</p>
+    
+    <p>The acronym JAR stands for Java Archive. This file type, similar to ZIP, combines many files into a single one. JAR is primarily designed to archive Java applets and their associated components, while it can also be used for other purposes.</p>
+     <img src="picture19.png" alt="picture19">
+</div>
+<div class="section">
+    <h3>3.3 FORMS DESCRIPTION </h3>
+    <h4>LOGIN FORM </h4>
+    <p>This login system is designed for administrators, likely for some sort of management system. Let's break down how it works:</p>
+    
+    <ol>
+        <li><strong>Interface Design:</strong> The interface is created using Java Swing, a toolkit for building graphical user interfaces (GUIs) in Java. It includes text fields for email and password input, buttons for login, creating a new account, and forgot password functionality.</li>
+        
+        <li><strong>Input Fields:</strong> Users are prompted to enter their email and password.</li>
+        
+        <li><strong>Login Button:</strong> When the user clicks the "Login" button, the system checks if the email and password match those stored in the system. If they match, the user is logged in. This part also creates a new menu frame for a loyal customer.</li>
+        
+        <li><strong>Forgot Password Button:</strong> If the user forgets their password, they can click the "Forgot Password?" button. It prompts them to input their email address. Once entered, it should send a password reset link to that email address (though this part is not fully implemented here).</li>
+        
+        <li><strong>Create New Account Button:</strong> Clicking this button opens a registration form for creating a new admin account. It hides the current login frame while the registration form is open.</li>
+        
+        <li><strong>Error Handling:</strong> The system includes basic error handling, such as ensuring the email field is not empty when resetting the password.</li>
+        
+        <li><strong>Code Structure:</strong> The code is structured into methods and listeners to handle user actions like button clicks. It separates GUI setup from action handling for clarity and organization.</li>
+    </ol>
+    
+    <p>Overall, this login system provides basic functionality for administrators to log in, create new accounts, and reset passwords if needed. However, it may require further development to fully implement features like sending password reset emails and securely storing user credentials.</p>
+    <img src="picture20.png" alt="picture20">
+</div>
+<div class="section">
+    <h4>SIGN UP FORM (REGISTRATION FORM)</h4>
+    <p>This signup form is designed for administrators to register new accounts. Here's a breakdown of how it works:</p>
+    
+    <ol>
+        <li><strong>Interface Design:</strong> Similar to the login form, this signup form is also created using Java Swing. It includes fields for entering personal information such as first name, last name, ID number, phone number, marital status, date of birth, email, and password.</li>
+        
+        <li><strong>Input Fields:</strong> Users are prompted to enter various details such as their first name, last name, ID number, phone number, etc.</li>
+        
+        <li><strong>Gender Selection:</strong> Users can select their gender from a dropdown menu.</li>
+        
+        <li><strong>Sign Up Button:</strong> When the user clicks the "Sign Up" button, the system collects all the entered information and creates a new administrator account with it. It also sends this information to the database or storage.</li>
+        
+        <li><strong>Cancel Button:</strong> The "Cancel" button allows the user to abort the signup process and return to the login page.</li>
+        
+        <li><strong>Data Handling:</strong> The entered data is collected and stored in an instance of the `admin` class. This class likely has methods to handle the insertion of data into a database or another storage system.</li>
+        
+        <li><strong>Error Handling:</strong> The form should ideally include error handling to ensure that all necessary fields are filled out and that the data entered is valid.</li>
+        
+        <li><strong>Code Structure:</strong> The code is structured into methods and listeners to handle user actions like button clicks. It separates GUI setup from action handling for clarity and organization.</li>
+    </ol>
+    
+    <p>Overall, this signup form provides a simple interface for administrators to register new accounts, collecting necessary information to create their profiles within the system. However, it may require further development to implement features like data validation and secure password handling.</p>
+     <img src="picture21.png" alt="picture21">
+</div>
+<div class="section">
+    <h4> MENU FORM</h4>
+    <p>This Java Swing program defines a menu system for a dashboard interface. Let's break down its components and functionality:</p>
+    
+    <ol>
+        <li><strong>Menu Bar and Menu Items:</strong>
+            <ul>
+                <li>The program creates a menu bar at the top of the window.</li>
+                <li>There's a "Home" menu with various menu items like "User Profile", "Reading History", "Notification Log", etc.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Dashboard Panel:</strong>
+            <ul>
+                <li>The main content area of the dashboard is represented by a JPanel.</li>
+                <li>This panel is customized to display a background image and a welcome message with the username of the logged-in user.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Menu Item Actions:</strong>
+            <ul>
+                <li>Each menu item has an associated action that occurs when it's clicked.</li>
+                <li>For example, clicking "User Profile" opens a user profile form, "Reading History" opens a reading history form, and so on.</li>
+                <li>The actions are handled within the <code>actionPerformed(ActionEvent e)</code> method.</li>
+            </ul>
+        </li>
+        
+        <li><strong>User Interaction:</strong>
+            <ul>
+                <li>When a menu item is clicked, the program shows a message dialog indicating which form is being opened.</li>
+                <li>Some menu items, like "Settings", prompt the user for input using JOptionPane dialogs. For example, the user can enter a new username and password.</li>
+                <li>The "Logout" option displays a confirmation dialog, and if the user confirms, the program closes.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>There are two main methods, <code>main(String[] args)</code> and <code>main1(String[] args)</code>.</li>
+                <li>They both initialize an instance of the <code>menu</code> class with a username and display it on the Swing event dispatch thread using <code>SwingUtilities.invokeLater()</code>.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>Overall, this program provides a basic framework for a dashboard interface with menu options that allow users to navigate to different forms and perform actions like viewing user profiles, reading history, managing settings, and logging out.</p>
+     <img src="picture22.png" alt="picture22">
+</div>
+<div class="section">
+    <h4>USER PROFILE</h4>
+    <p>This Java program creates a user profile form with functionalities to insert, view, update, and delete user profile data. Let's break down its components and functionality:</p>
+
+    <ol>
+        <li><strong>Form Components:</strong>
+            <ul>
+                <li>The form includes labels and text fields for user ID, username, email, preferences, reading history, and subscription status.</li>
+                <li>It also contains buttons for inserting, viewing, updating, and deleting user profiles.</li>
+            </ul>
+        </li>
+
+        <li><strong>Action Listeners:</strong>
+            <ul>
+                <li>Each button has an associated action listener to handle user interactions.</li>
+                <li>When the insert button is clicked, it reads data from the text fields, creates a new <code>UserProfile</code> object, and inserts the data into the database.</li>
+                <li>When the view button is clicked, it retrieves data from the database and displays it in a table.</li>
+                <li>The update and delete buttons work similarly, allowing users to update or delete existing user profiles.</li>
+            </ul>
+        </li>
+
+        <li><strong>Data Handling:</strong>
+            <ul>
+                <li>User profile data is stored in a <code>UserProfile</code> class, which interacts with a database.</li>
+                <li>The program uses SQL queries to insert, view, update, and delete user profile data from the database.</li>
+            </ul>
+        </li>
+
+        <li><strong>Error Handling:</strong>
+            <ul>
+                <li>The program includes error handling to validate user input. For example, it checks if the user ID is a valid integer before performing database operations.</li>
+            </ul>
+        </li>
+
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>The main method initializes an instance of the <code>UserProfileForm</code> class, creating and displaying the user profile form.</li>
+            </ul>
+        </li>
+
+        <li><strong>GUI Styling:</strong>
+            <ul>
+                <li>The form's components are styled using fonts and colors to enhance readability and visual appeal.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>Overall, this user profile form provides a simple interface for managing user profile data, allowing users to perform CRUD (Create, Read, Update, Delete) operations on user profiles stored in a database.</p>
+     <img src="picture23.png" alt="picture23">
+</div>
+<div class="section">
+    <h4>READING HISTORY</h4>
+    <p>This Java program creates a form for managing reading history data, including functionalities to insert, view, update, and delete reading history records. Let's explore its components and functionality:</p>
+    
+    <ol>
+        <li><strong>Form Components:</strong>
+            <ul>
+                <li>The form includes labels and text fields for history ID, user ID, article ID, timestamp, and reading duration.</li>
+                <li>It also contains buttons for inserting, viewing, updating, and deleting reading history records.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Action Listeners:</strong>
+            <ul>
+                <li>Each button has an associated action listener to handle user interactions.</li>
+                <li>When the insert button is clicked, it reads data from the text fields, creates a new <code>ReadingHistory</code> object, and inserts the data into the database.</li>
+                <li>When the view button is clicked, it retrieves data from the database and displays it in a table.</li>
+                <li>The update and delete buttons work similarly, allowing users to update or delete existing reading history records.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Data Handling:</strong>
+            <ul>
+                <li>Reading history data is stored in a <code>ReadingHistory</code> class, which interacts with a database.</li>
+                <li>The program uses SQL queries to insert, view, update, and delete reading history data from the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Error Handling:</strong>
+            <ul>
+                <li>The program includes error handling to validate user input. For example, it checks if the input values are valid integers before performing database operations.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>The main method initializes an instance of the <code>ReadingHistoryForm</code> class, creating and displaying the reading history form.</li>
+            </ul>
+        </li>
+        
+        <li><strong>GUI Styling:</strong>
+            <ul>
+                <li>The form's components are styled using fonts and colors to enhance readability and visual appeal.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>In summary, this reading history form provides a user-friendly interface for managing reading history records, allowing users to perform CRUD (Create, Read, Update, Delete) operations on reading history data stored in a database.</p>
+     <img src="picture24.png" alt="picture24">
+</div>
+<div class="section">
+    <h4>NOTIFICATION LOG</h4>
+    <p>This Java program creates a form for managing notification log data, including functionalities to insert, view, update, and delete notification log records. Let's examine its components and functionality:</p>
+    
+    <ol>
+        <li><strong>Form Components:</strong>
+            <ul>
+                <li>The form includes labels and text fields for log ID, user ID, notification type, timestamp, and status.</li>
+                <li>It also contains buttons for inserting, viewing, updating, and deleting notification log records.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Action Listeners:</strong>
+            <ul>
+                <li>Each button has an associated action listener to handle user interactions.</li>
+                <li>When the insert button is clicked, it reads data from the text fields, creates a new <code>NotificationLog</code> object, and inserts the data into the database.</li>
+                <li>When the view button is clicked, it retrieves data from the database and displays it in a table.</li>
+                <li>The update and delete buttons work similarly, allowing users to update or delete existing notification log records.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Data Handling:</strong>
+            <ul>
+                <li>Notification log data is stored in a <code>NotificationLog</code> class, which interacts with a database.</li>
+                <li>The program uses SQL queries to insert, view, update, and delete notification log data from the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Error Handling:</strong>
+            <ul>
+                <li>The program includes error handling to validate user input. For example, it checks if the input values are valid integers before performing database operations.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>The main method initializes an instance of the <code>NotificationLogForm</code> class, creating and displaying the notification log form.</li>
+            </ul>
+        </li>
+        
+        <li><strong>GUI Styling:</strong>
+            <ul>
+                <li>The form's components are styled using fonts and colors to enhance readability and visual appeal.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>In summary, this notification log form provides a user-friendly interface for managing notification log records, allowing users to perform CRUD (Create, Read, Update, Delete) operations on notification log data stored in a database.</p>
+     <img src="picture25.png" alt="picture25">
+</div>
+<div class="section">
+    <h4>NEWS ARTICLE</h4>
+    <p>This Java program creates a form for managing news article data, allowing users to perform operations such as inserting, viewing, updating, and deleting news articles. Here's a breakdown of its functionality and components:</p>
+    
+    <ol>
+        <li><strong>Form Components:</strong>
+            <ul>
+                <li>The form includes labels and text fields for article ID, title, author, publication date, content, tags, and source.</li>
+                <li>Additionally, there are buttons for inserting, viewing, updating, and deleting news articles.</li>
+                <li>A table is used to display the news article records fetched from the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Action Listeners:</strong>
+            <ul>
+                <li>Each button has an associated action listener to handle user interactions.</li>
+                <li>When the insert button is clicked, the program retrieves data from the text fields, creates a new <code>NewsArticle</code> object, and inserts the data into the database.</li>
+                <li>The view button fetches existing news articles from the database and displays them in the table.</li>
+                <li>Similarly, the update and delete buttons allow users to modify or remove existing news articles.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Data Handling:</strong>
+            <ul>
+                <li>News article data is encapsulated within a <code>NewsArticle</code> class, which interacts with the underlying database.</li>
+                <li>SQL queries are used to perform CRUD (Create, Read, Update, Delete) operations on news article data stored in the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Error Handling:</strong>
+            <ul>
+                <li>The program includes error handling mechanisms to validate user input. For instance, it verifies if the article ID entered is a valid integer before executing database operations.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>The main method initializes an instance of the <code>NewsArticleForm</code> class, creating and displaying the news article form.</li>
+            </ul>
+        </li>
+        
+        <li><strong>GUI Styling:</strong>
+            <ul>
+                <li>The form's components are styled using fonts and colors to enhance readability and user experience.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>In summary, this news article form provides a user-friendly interface for managing news articles, enabling users to perform various operations on news article records stored in a database.</p>
+     <img src="picture26.png" alt="picture26">
+</div>
+<div class="section">
+    <h4> DIGEST CONFIGURATION</h4>
+    <p>The <code>DigestConfigurationForm</code> Java program creates a graphical user interface (GUI) for managing digest configurations, allowing users to perform actions such as inserting, viewing, updating, and deleting digest configuration data. Here's an overview of its functionality and components:</p>
+    
+    <ol>
+        <li><strong>Form Components:</strong>
+            <ul>
+                <li>The form consists of labels and text fields for specifying digest ID, user ID, time of delivery, preferred content types, and language preferences.</li>
+                <li>It includes buttons for inserting, viewing, updating, and deleting digest configurations.</li>
+                <li>A table is provided to display the digest configuration records fetched from the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Action Listeners:</strong>
+            <ul>
+                <li>Each button has an associated action listener to handle user interactions.</li>
+                <li>When the insert button is clicked, the program retrieves data from the text fields, creates a new <code>DigestConfiguration</code> object, and inserts the data into the database.</li>
+                <li>The view button fetches existing digest configurations from the database and displays them in the table.</li>
+                <li>Similarly, the update and delete buttons allow users to modify or remove existing digest configurations.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Data Handling:</strong>
+            <ul>
+                <li>Digest configuration data is encapsulated within a <code>DigestConfiguration</code> class, which interacts with the underlying database.</li>
+                <li>SQL queries are used to perform CRUD (Create, Read, Update, Delete) operations on digest configuration data stored in the database.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Error Handling:</strong>
+            <ul>
+                <li>The program includes error handling mechanisms to validate user input. For example, it verifies if the digest ID entered is a valid integer before executing database operations.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Main Method:</strong>
+            <ul>
+                <li>The main method initializes an instance of the <code>DigestConfigurationForm</code> class, creating and displaying the digest configuration form.</li>
+            </ul>
+        </li>
+        
+        <li><strong>GUI Styling:</strong>
+            <ul>
+                <li>The form's components are styled using fonts and colors to enhance readability and user experience.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>In summary, this digest configuration form provides a user-friendly interface for managing and customizing digest configurations, enabling users to specify their preferences for content delivery and language.</p>
+     <img src="picture27.png" alt="picture27">
+</div>
+<div class="section">
+    <h4>3.4 SPECIAL BUTTONS </h4>
+    <p>Sure, let's describe the special buttons for each of the provided forms:</p>
+
+    <ol>
+        <li><strong>Login Form:</strong>
+            <ul>
+                <li><strong>Login Button:</strong> This button verifies the entered username and password combination against the database. If the credentials are correct, it grants access to the application or system.</li>
+            </ul>
+        </li>
+
+        <li><strong>Signup Form:</strong>
+            <ul>
+                <li><strong>Signup Button:</strong> When clicked, this button validates the entered user information and creates a new user account in the system's database. It's used for user registration.</li>
+            </ul>
+        </li>
+
+        <li><strong>Menu:</strong>
+            <ul>
+                <li><strong>Navigation Buttons:</strong> These buttons allow users to navigate between different sections or functionalities within the application. They provide access to various forms or features, such as viewing news articles, managing user profiles, accessing notification logs, etc.</li>
+            </ul>
+        </li>
+
+        <li><strong>News Article Form:</strong>
+            <ul>
+                <li><strong>Insert Button:</strong> Allows users to add new news articles to the database.</li>
+                <li><strong>View Button:</strong> Retrieves and displays existing news articles from the database in a table format.</li>
+                <li><strong>Update Button:</strong> Enables users to modify the content of selected news articles.</li>
+                <li><strong>Delete Button:</strong> Deletes the selected news article from the database.</li>
+            </ul>
+        </li>
+
+        <li><strong>Reading History Form:</strong>
+            <ul>
+                <li><strong>Insert Button:</strong> Adds new reading history records to the database.</li>
+                <li><strong>View Button:</strong> Retrieves and displays reading history data from the database in a table format.</li>
+                <li><strong>Update Button:</strong> Allows users to update existing reading history records.</li>
+                <li><strong>Delete Button:</strong> Deletes selected reading history records from the database.</li>
+            </ul>
+        </li>
+
+        <li><strong>Digest Configuration Form:</strong>
+            <ul>
+                <li><strong>Insert Button:</strong> Adds new digest configuration settings to the database.</li>
+                <li><strong>View Button:</strong> Fetches and displays existing digest configuration settings from the database in a table format.</li>
+                <li><strong>Update Button:</strong> Enables users to modify existing digest configuration settings.</li>
+                <li><strong>Delete Button:</strong> Deletes selected digest configuration settings from the database.</li>
+            </ul>
+        </li>
+
+        <li><strong>Notification Log Form:</strong>
+            <ul>
+                <li><strong>Insert Button:</strong> Adds new notification log entries to the database.</li>
+                <li><strong>View Button:</strong> Retrieves and displays notification log data from the database in a table format.</li>
+                <li><strong>Update Button:</strong> Allows users to update existing notification log entries.</li>
+                <li><strong>Delete Button:</strong> Deletes selected notification log entries from the database.</li>
+            </ul>
+        </li>
+
+        <li><strong>User Profile Form:</strong>
+            <ul>
+                <li><strong>Update Button:</strong> Allows users to modify their profile information such as name, email, password, etc. Updates the changes in the database.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>Each of these buttons serves a specific purpose within its respective form, facilitating interaction with the application's features and data management functionalities.</p>
+</div>
+<div class="section">
+    <h3>3.5 CONCLUSION </h3>
+    <p>The "Personalized Daily News Digest" project is designed to revolutionize how people consume news by providing a tailored and convenient experience. By analyzing users' reading habits and preferences, the project delivers a daily summary of news articles that align with their interests. This personalized approach eliminates the need for users to sift through overwhelming amounts of information, saving them time and effort.</p>
+
+    <p>The primary objective of the project is to simplify the news consumption process and make it more personalized. Leveraging intelligent technology, the project identifies each user's news preferences and curates a concise list of articles tailored to their tastes. This ensures that users can focus on the news that matters most to them without feeling inundated by irrelevant content.</p>
+
+    <p>A significant benefit of this project is its ability to foster a stronger connection between users and the news. By delivering articles on topics that resonate with users, the project makes the news more engaging and relevant to their lives. This personalized approach enhances users' overall news experience, making it both informative and enjoyable.</p>
+
+    <p>Moreover, the project instills confidence in users by keeping them well-informed about current events. By providing updates on topics they care about, the project ensures that users stay abreast of important developments, empowering them to participate in informed discussions and decision-making.</p>
+
+    <p>In conclusion, the "Personalized Daily News Digest" project exemplifies the power of technology in enhancing news consumption. By delivering tailored news content that aligns with users' interests and preferences, the project aims to make the news more accessible, understandable, and enjoyable. It represents a step towards a future where individuals can effortlessly stay informed about the world around them, contributing to a more engaged and informed society.</p>
+</div>
+
+
+</body>
+</html>

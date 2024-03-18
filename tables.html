@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZED DAILY NEWS DIGEST</title>
+    <div id="image-slider">
+    <!-- Placeholder for the images -->
+</div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: green;
+            background-color: white;
+            margin: 0;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgba(105, 105, 105, 0.8);
+        }
+        .nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+       #image-slider {
+    height: 300px; /* Adjust height as needed */
+    animation: slideImages 15s infinite;
+}
+
+@keyframes slideImages {
+    0%, 33.33% {
+        background-image: url('sky4.jpg');
+    }
+    33.33%, 66.66% {
+        background-image: url('sky 3.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('sky 2.jpg');
+    }
+}
+
+        /* Animation */
+        @keyframes move {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .moving-text {
+            animation: move 10s infinite alternate;
+        }
+        .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin-top: 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+     tr {
+    color: blue;
+}
+
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>PERSONALIZED DAILY NEWS DIGEST</h1>
+</div>
+
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact us.html">Contact us</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+    <a href="tables.html">Tables</a>
+   <a href="my book.html">My Book</a>
+</div>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>User Profile Table</h2>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Preferences</th>
+            <th>Reading History</th>
+            <th>Subscription Status</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>AliceSmith</td>
+            <td>alice.smith@gmail.com</td>
+            <td>Science, Health</td>
+            <td>2,4,6</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>BobJohnson</td>
+            <td>bob.johnson@gmail.com</td>
+            <td>Politics, Economics</td>
+            <td>3,5,7</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>EmilyDavis</td>
+            <td>emily.davis@gmail.com</td>
+            <td>Art, Literature</td>
+            <td>4,6,8</td>
+            <td>Inactive</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>MichaelBrown</td>
+            <td>michael.brown@gmail.com</td>
+            <td>Sports, Entertainment</td>
+            <td>5,7,9</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>SarahWilson</td>
+            <td>sarah.wilson@gmail.com</td>
+            <td>Technology, Health</td>
+            <td>6,8,10</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>DavidMiller</td>
+            <td>david.miller@gmail.com</td>
+            <td>Environment, Science</td>
+            <td>7,9,11</td>
+            <td>Active</td>
+        </tr>
+    </table>
+
+    <h2>News Article Table</h2>
+    <table>
+        <tr>
+            <th>Article ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication Date</th>
+            <th>Content</th>
+            <th>Tags</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>The Impact of Climate Change</td>
+            <td>John Adams</td>
+            <td>2024-01-05</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Climate Change, Environment</td>
+            <td>EnvironmentalNews.org</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Understanding Quantum Computing</td>
+            <td>Emily Johnson</td>
+            <td>2024-01-10</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Quantum Computing, Technology</td>
+            <td>TechInsight.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Economic Trends in Asia</td>
+            <td>Michael Brown</td>
+            <td>2024-01-15</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Economics, Asia</td>
+            <td>EconomicTimes.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>New Advances in Medicine</td>
+            <td>Alice Smith</td>
+            <td>2024-01-20</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Medicine, Health</td>
+            <td>MedicalJournal.com</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Art in the Digital Age</td>
+            <td>Sophia Lee</td>
+            <td>2024-01-25</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Art, Digital</td>
+            <td>ArtTech.com</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sports Recap of the Year</td>
+            <td>Daniel White</td>
+            <td>2024-02-01</td>
+            <td>Lorem ipsum dolor sit amet...</td>
+            <td>Sports, Recap</td>
+            <td>SportsNewsWeekly.com</td>
+        </tr>
+    </table>
+
+    <!-- Insert more tables similarly for other tables -->
+
+</div>
+<h2>Digest Configuration Table</h2>
+<table>
+    <tr>
+        <th>Digest ID</th>
+        <th>User ID</th>
+        <th>Time Of Delivery</th>
+        <th>Preferred Content Types</th>
+        <th>Language Preferences</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>09:00:00</td>
+        <td>Science, Health</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>10:00:00</td>
+        <td>Politics, Economics</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4</td>
+        <td>11:00:00</td>
+        <td>Art, Literature</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>12:00:00</td>
+        <td>Sports, Entertainment</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>6</td>
+        <td>13:00:00</td>
+        <td>Technology, Health</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>7</td>
+        <td>14:00:00</td>
+        <td>Environment, Science</td>
+        <td>English</td>
+    </tr>
+</table>
+
+<h2>Reading History Table</h2>
+<table>
+    <tr>
+        <th>History ID</th>
+        <th>User ID</th>
+        <th>Article ID</th>
+        <th>Timestamp</th>
+        <th>Reading Duration</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2024-01-08 11:45:00</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2024-01-15 13:20:00</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2024-01-22 15:10:00</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2024-01-29 17:30:00</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>2024-02-05 09:45:00</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>7</td>
+        <td>7</td>
+        <td>2024-02-12 12:55:00</td>
+        <td>30</td>
+    </tr>
+</table>
+
+<h2>Notification Log Table</h2>
+<table>
+    <tr>
+        <th>Log ID</th>
+        <th>User ID</th>
+        <th>Notification Type</th>
+        <th>Timestamp</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>New Article</td>
+        <td>2024-01-06 10:00:00</td>
+        <td>Unread</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>New Article</td>
+        <td>2024-01-13 11:30:00</td>
+        <td>Unread</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4</td>
+        <td>New Article</td>
+        <td>2024-01-20 13:15:00</td>
+        <td>Unread</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>New Article</td>
+        <td>2024-01-27 15:45:00</td>
+        <td>Unread</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>6</td>
+        <td>New Article</td>
+        <td>2024-02-03 08:30:00</td>
+        <td>Unread</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>7</td>
+        <td>New Article</td>
+        <td>2024-02-10 11:20:00</td>
+        <td>Unread</td>
+    </tr>
+</table>
+</body>
+</html>

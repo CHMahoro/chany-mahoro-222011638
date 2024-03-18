@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZED DAILY NEWS DIGEST</title>
+    <div id="image-slider">
+    <!-- Placeholder for the images -->
+</div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: green;
+            background-color: white;
+            margin: 0;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgba(105, 105, 105, 0.8);
+        }
+        .nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: green;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+       #image-slider {
+    height: 300px; /* Adjust height as needed */
+    animation: slideImages 15s infinite;
+}
+
+@keyframes slideImages {
+    0%, 33.33% {
+        background-image: url('sky4.jpg');
+    }
+    33.33%, 66.66% {
+        background-image: url('sky 3.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('sky 2.jpg');
+    }
+}
+
+        /* Animation */
+        @keyframes move {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .moving-text {
+            animation: move 10s infinite alternate;
+        }
+         input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>PERSONALIZED DAILY NEWS DIGEST</h1>
+</div>
+
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact us.html">Contact us</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+    <a href="tables.html">Tables</a>
+    <a href="my book.html">My Book</a>
+</div>
+</head>
+<body>
+
+<form action="/submit-form" method="post">
+    <h1>User Registration Form</h1>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="preferences">Preferences:</label><br>
+    <select id="preferences" name="preferences" multiple size="8" required>
+        <option value="Technology">Technology</option>
+        <option value="Sports">Sports</option>
+        <option value="Politics">Politics</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+        <option value="Health">Health</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Science">Science</option>
+        <option value="Education">Education</option>
+        <option value="Art">Art</option>
+        <option value="Music">Music</option>
+        <option value="Books">Books</option>
+        <option value="History">History</option>
+        <option value="Environment">Environment</option>
+        <option value="Business">Business</option>
+        <!-- Add more preferences below -->
+    </select><br>
+
+    <label for="subscription-status">Subscription Status:</label><br>
+    <select id="subscription-status" name="subscription-status" required>
+        <option value="">Select Subscription Status</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+    </select><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="USA">USA</option>
+        <option value="Russia">Russia</option>
+        <option value="Burundi">Burundi</option>
+        <option value="D.R.C">D.R.C</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Cote de voir">Cote de voir</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Canada">Canada</option>
+        <!-- Add more countries below -->
+    </select><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br>
+
+    <label for="phone">Phone Number:</label><br>
+<select id="phone-code" name="phone-code" required>
+    <option value="+1">USA (+1)</option>
+    <option value="+7">Russia (+7)</option>
+    <option value="+257">Burundi (+257)</option>
+    <option value="+243">D.R.C (+243)</option>
+    <option value="+255">Tanzania (+255)</option>
+    <option value="+250">Rwanda (+250)</option>
+    <option value="+225">Cote de voir (+225)</option>
+    <option value="+233">Ghana (+233)</option>
+    <option value="+237">Cameroon (+237)</option>
+    <option value="+261">Madagascar (+261)</option>
+    <option value="+1">Canada (+1)</option>
+    <!-- Add more country codes below -->
+</select>
+<input type="text" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
